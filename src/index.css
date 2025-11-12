@@ -32,6 +32,7 @@ body {
 
 h1 {
   font-size: 3.2em;
+  color: #1a1a1a;
   line-height: 1.1;
 }
 
@@ -67,19 +68,49 @@ button:focus-visible {
   }
 }
 
+
+/* Card Grid Layout */
+.card-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 2rem;
+  max-width: 10000px;
+  margin: 0 auto;
+}
+
+/* Individual Card Styling */
 .card {
   background-color: #2a2a2a;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  padding: 20px;
-  margin: 20px;
-  width: 400px;
-  display: inline-block ;
+  padding: 1.5rem;
+  width: 100%;
+  text-align: left;
 }
 
-.avatar {
+/* .card-title { 
+  margin: 0 0 0.75rem 0;
+  font-size: 1.3rem;
+  color: #fff;
+} */
+
+/* .avatar {
   width: 150px;
   height: 150px;
-  border-radius: 5%;
+  border-radius: 8px;
+  display: block;
+  margin: 0 0 1rem 0;
+  object-fit: cover;
+} */
 
+.card-body {
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.read-the-docs {
+  color: #888;
 }

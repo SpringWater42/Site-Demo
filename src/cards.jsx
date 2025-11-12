@@ -1,28 +1,12 @@
-const user = {
-  name: 'Da Dog',
-  imageUrl: '',
-  imageSize: 350,
-};
-
-
-function cards() {
+// Simple Card component
+function Card({ name, imageUrl, imageSize = 150, children }) {
   return (
     <div className="card">
-
-        {/* <h1>Cards Component</h1> */}
-        <h1>{user.name}</h1>
-      <img 
-        className="avatar"
-        src={user.imageUrl}
-        alt={'Photo of ' + user.name}
-        style={{
-          width: user.imageSize,
-          height: user.imageSize
-        }}
-      />
+      <h2 className="card-title">{name}</h2>
+      <img className="avatar" src={imageUrl} alt={name} style={{ width: imageSize, height: imageSize }} />
+      <div className="card-body">{children}</div>
     </div>
-  
-);
+  );
 }
 
-export default cards;
+export default Card;
