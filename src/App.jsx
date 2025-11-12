@@ -1,10 +1,11 @@
-import Cards from './cards.jsx';
 
 function App() {
   return(
+    
     <>
-    <Cards/>
-    <Cards/>
+    <h2>niggas</h2>
+   
+
     </>
   );
 
